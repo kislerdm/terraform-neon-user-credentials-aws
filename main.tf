@@ -18,7 +18,7 @@ provider "aws" {
 
 locals {
   lambda_name = "neon"
-  tag         = "v0.1.1"
+  tag         = "v0.1.2"
 
   user_credentials = { for i in var.user_credentials : "${i.project_id}-${i.branch_id}-${i.dbname}-${i.user}" => i }
 }
